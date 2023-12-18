@@ -270,7 +270,6 @@
         @current-change="currentChange"
       />
     </div>
-
   </div>
 </template>
 

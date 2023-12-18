@@ -159,7 +159,27 @@ export const constantRoutes = [
       }
     ]
   },
-
+  {
+    path: '/gener',
+    component: Layout,
+    redirect: '/geneder/user',
+    name: 'Gener',
+    meta: { title: '生成菜单', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'user',
+        name: 'User',
+        component: () => import('@/views/pages/user/UserList.vue'),
+        meta: { title: '用户管理', icon: 'table' }
+      },
+      {
+        path: 'user',
+        name: 'User',
+        component: () => import('@/views/pages/user/UserList.vue'),
+        meta: { title: '用户管理', icon: 'table' }
+      }
+    ]
+  },
   {
     path: '/planform',
     component: Layout,
@@ -178,10 +198,9 @@ export const constantRoutes = [
         name: 'Role',
         component: () => import('@/views/planform/role'),
         meta: { title: '角色管理', icon: 'tree' }
-      },
+      }
     ]
   },
-
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
