@@ -173,9 +173,9 @@ export const constantRoutes = [
         meta: { title: '用户管理', icon: 'table' }
       },
       {
-        path: 'user',
-        name: 'User',
-        component: () => import('@/views/pages/user/UserList.vue'),
+        path: '/e/user',
+        name: 'huleu',
+        component: () => import('@/views/planform/user'),
         meta: { title: '用户管理', icon: 'table' }
       }
     ]

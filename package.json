@@ -1,7 +1,7 @@
 {
-  "name": "vue-admin-template",
-  "version": "4.4.0",
-  "description": "a admin template",
+  "name": "code-generator-web",
+  "version": "1.0.0",
+  "description": "web base of code-generator",
   "author": "Mao <mjhxyz@foxmail.com>",
   "scripts": {
     "dev": "vue-cli-service serve",
